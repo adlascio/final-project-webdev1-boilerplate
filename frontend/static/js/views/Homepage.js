@@ -7,6 +7,10 @@ export default class extends AbstractView{
     }
 
     async getHTML() {
-        return "<h1>Homepage</h1>";
+        return `
+        <div style="background-color: red">
+            <button id="test">description</button>
+        </div>
+        `;
     }
 }

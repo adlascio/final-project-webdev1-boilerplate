@@ -1,5 +1,14 @@
-import {getCountries} from './countries.js'
 
-const countries = getCountries();
+window.addEventListener("DOMContentLoaded", setEvents);
 
-console.log(countries);
+function setEvents() {
+  let targetButton = document.querySelector("#test");
+  targetButton.addEventListener("click", buttonTapped );
+
+  // attach event functions to elements
+
+}
+
+function buttonTapped(){
+  console.log("button tapped")
+}

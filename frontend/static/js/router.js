@@ -39,8 +39,6 @@ const router = async () => {
 
     const countries = getCountries();
     const params = getParams(match)
-
-    
     
     if(!match) {
         match = {
@@ -48,6 +46,9 @@ const router = async () => {
             result: [location.pathname]
         }
     } else if(match.route.path === "/countries/:id"){
+
+        console.log("test");
+
         let found = false;
         for(let country of countries){
             const cca3 = country.cca3.toLowerCase();
