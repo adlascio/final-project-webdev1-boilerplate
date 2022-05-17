@@ -1,19 +1,75 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+nav .nav__link {
+  font-weight: 800;
+}
+nav button {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(209deg, 23%, 22%);
+}
+nav button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
 #app {
   width: 100%;
-  background-color: aqua;
+  height: 100vh;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
-
-#home-container {
-  text-align: center;
+#app #home-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
-
-.home-heading {
+#app #home-container .home-photo {
+  padding: 1rem 0;
+  border-radius: 50%;
+}
+#app #home-container .home-heading {
   color: hsl(209deg, 23%, 22%);
   font-size: 3rem;
 }
-
-.home-btn-search {
+#app #home-container .home-btn-search {
   padding: 1.5rem;
   border: none;
+  border-radius: 20px;
   font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(209deg, 23%, 22%);
+  margin: 1.5rem;
+}
+#app #home-container .home-btn-search:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 375px) {
+  .home-photo {
+    padding: 1rem 0;
+    border-radius: 50%;
+    width: 80%;
+  }
 }/*# sourceMappingURL=home.css.map */

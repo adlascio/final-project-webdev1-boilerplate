@@ -1,27 +1,89 @@
 // Variables
-$color-d-blue-dark: hsl(209, 23%, 22%);
-$color-v-d-blue-dark: hsl(207, 26%, 17%);
-$color-v-d-blue-light:hsl(200, 15%, 8%);
-$color-d-gray-light: hsl(0, 0%, 52%);
-$color-v-l-gray-light: hsl(0, 0%, 98%);
+$color-d-blue-dMode: hsl(209, 23%, 22%);
+$color-v-d-blue-dMode: hsl(207, 26%, 17%);
+$color-v-d-blue-lMode:hsl(200, 15%, 8%);
+$color-d-gray-lMode: hsl(0, 0%, 52%);
+$color-v-l-gray-lMode: hsl(0, 0%, 98%);
 $color-white: hsl(0, 0%, 100%);
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: $color-white;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  .nav__link {
+   font-weight: 800;
+  }
+
+  button {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    color: $color-white;
+    background-color: $color-d-blue-dMode;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transform: scale(0.9);
+      transition: .5s;
+    }
+  }
+}
 
 #app {
   width: 100%;
-  background-color: aqua;
+  height: 100vh;
+  padding-top: 200px;
+  // background-color: $color-v-l-gray-lMode;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  #home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .home-photo {
+     padding: 1rem 0;
+     border-radius: 50%;
+   }
+    .home-heading {
+      color: $color-d-blue-dMode;
+      font-size: 3rem;
+    }
+    .home-btn-search {
+      padding: 1.5rem;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: $color-white;
+      background-color: $color-d-blue-dMode;
+      margin: 1.5rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transform: scale(0.9);
+        transition: .5s;
+      }
+    }
+  }
 }
 
-#home-container {
-  text-align: center;
-}
 
-.home-heading {
-  color: $color-d-blue-dark;
-  font-size: 3rem;
-}
 
-.home-btn-search {
-  padding: 1.5rem;
-  border: none;
-  font-size: 1.5rem;
+// For Mobile
+@media only screen and (max-width: 375px)  {
+  .home-photo {
+    padding: 1rem 0;
+    border-radius: 50%;
+    width: 80%;
+
+  }
 }
