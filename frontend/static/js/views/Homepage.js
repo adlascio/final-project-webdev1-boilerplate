@@ -7,14 +7,10 @@ export default class extends AbstractView{
     }
 
     async getHTML() {
-        const title = document.getElementById("app");
-        title.innerHTML = `
-        <h1 class="home-heading">Where in the world?</h1>
-        <button class="home-btn-search">Start Searching!</button>`
         return `
-        <div id="container">
-          ${div.innerHTML}
+        <div id="home-container">
+        <h1 class="home-heading">Where in the world?</h1>
+        <button class="home-btn-search">Start Searching!</button>
         </div>`
-        // return "<h1>Home</h1>";
     }
 }

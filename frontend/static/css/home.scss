@@ -1,0 +1,27 @@
+// Variables
+$color-d-blue-dark: hsl(209, 23%, 22%);
+$color-v-d-blue-dark: hsl(207, 26%, 17%);
+$color-v-d-blue-light:hsl(200, 15%, 8%);
+$color-d-gray-light: hsl(0, 0%, 52%);
+$color-v-l-gray-light: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+
+#app {
+  width: 100%;
+  background-color: aqua;
+}
+
+#home-container {
+  text-align: center;
+}
+
+.home-heading {
+  color: $color-d-blue-dark;
+  font-size: 3rem;
+}
+
+.home-btn-search {
+  padding: 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+}
