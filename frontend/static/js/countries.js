@@ -10,5 +10,14 @@ export function getCountries() {
     const countries = localStorage.getItem('countries');
     return JSON.parse(countries);
 };
+//function which return a list of country with the follow information : name,flag,population,region
+export function getCountriesResume () {
+
+    const arrayCountries=getCountries();
+    const newArray = arrayCountries.map(j => ({ countryName: j.name.common, flag: j.flags.svg, population: j.population, region: j.region }));
+    return newArray;
+};
+
+
 
 

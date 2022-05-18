@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Courgette&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: url(../css/images/backgroundImage.jpeg) no-repeat bottom center;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid #8D9DA8;
+  border-bottom: 1px solid #8D9DA8;
+}
+.header .navbar {
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+.header .navbar .nav_link {
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 0.3s ease 0s;
+}
+.header .navbar .nav_link:hover {
+  color: cadetblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+}
+.container h3 {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: hsl(207deg, 26%, 17%);
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-flex {
+  flex: 1;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: hsla(224deg, 40%, 89%, 0.705);
+}
+
+.in-flex div {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.in-flex img {
+  margin: 15px;
+  max-width: 140px;
+}
+
+.flags {
+  display: inline-block;
+  background-color: hsla(256deg, 91%, 27%, 0.13);
+}
+
+.flags p {
+  text-align: left;
+}
+
+.flags h1 {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-home {
+  background: rgba(41, 54, 88, 0.631372549);
+  border: 0px solid #556699;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  margin-left: 70px;
+  margin-top: 20px;
+}/*# sourceMappingURL=index.css.map */

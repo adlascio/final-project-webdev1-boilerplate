@@ -1,0 +1,76 @@
+@use "_frontPage";
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Courgette&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background-color: hsl(207, 26%, 17%);
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-flex {
+  flex: 1;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: hsla(224, 40%, 89%, 0.705);
+}
+
+.in-flex div {
+  padding: 20px;
+  margin-top: 20px;
+  //background-color: rgba(57, 112, 196, 0.856);
+}
+
+.in-flex img {
+  margin: 15px;
+  max-width: 180px;
+}
+
+.flag1 {
+  display: inline-block;
+  //text-align: center;
+  background-color: hsla(256, 91%, 27%, 0.13);
+}
+
+.flag1 p {
+  text-align: left;
+}
+
+.flag1 h1 {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-home {
+  background: #293658a1;
+  border: 0px solid #556699;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  margin-left: 70px;
+  margin-top: 20px;
+}
