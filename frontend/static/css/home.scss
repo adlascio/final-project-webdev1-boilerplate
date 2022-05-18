@@ -6,6 +6,7 @@ $color-d-gray-lMode: hsl(0, 0%, 52%);
 $color-v-l-gray-lMode: hsl(0, 0%, 98%);
 $color-white: hsl(0, 0%, 100%);
 
+// Navigation bar
 nav {
   display: flex;
   justify-content: space-between;
@@ -19,8 +20,8 @@ nav {
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
   .nav__link {
    font-weight: 800;
+   color: $color-d-blue-dMode;
   }
-
   button {
     border: none;
     border-radius: 20px;
@@ -35,12 +36,11 @@ nav {
     }
   }
 }
-
+// Main area
 #app {
   width: 100%;
   height: 100vh;
-  padding-top: 200px;
-  // background-color: $color-v-l-gray-lMode;
+  padding-top: 13rem;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -52,10 +52,12 @@ nav {
     .home-photo {
      padding: 1rem 0;
      border-radius: 50%;
+     width: 50%;
    }
     .home-heading {
       color: $color-d-blue-dMode;
       font-size: 3rem;
+      text-align: center;
     }
     .home-btn-search {
       padding: 1.5rem;
@@ -76,14 +78,49 @@ nav {
   }
 }
 
-
-
-// For Mobile
+// For Mobile (375px)
 @media only screen and (max-width: 375px)  {
-  .home-photo {
-    padding: 1rem 0;
-    border-radius: 50%;
-    width: 80%;
+  nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem;
 
+    .nav__link {
+      display: none;
+     }
+     button {
+       padding: .5rem;
+       font-size: .7rem;
+     }
+  }
+  #app {
+    padding-top: 5rem;
+    #home-container {
+      .home-heading {
+        color: $color-d-blue-dMode;
+        font-size: 1.8rem;
+      }
+      .home-photo {
+        padding: 1rem 0;
+        width: 80%;
+      }
+      .home-btn-search {
+        padding: 1rem;
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 800;
+        color: $color-white;
+        background-color: $color-d-blue-dMode;
+        margin: 1rem;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+          transform: scale(0.9);
+          transition: .5s;
+        }
+      }
+    }
   }
 }
