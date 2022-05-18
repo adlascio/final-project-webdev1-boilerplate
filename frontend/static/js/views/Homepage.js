@@ -7,6 +7,11 @@ export default class extends AbstractView{
     }
 
     async getHTML() {
-        return "<h1>Homepage</h1>";
+        return `
+        <div id="home-container">
+        <h1 class="home-heading">Where in the world?</h1>
+        <img src="static/images/home-main-sm.jpg" class="home-photo" alt="Home photo">
+        <a href="/countries" class="home-btn-search"><i class="fa-solid fa-magnifying-glass"></i> Start Exploring!</a>
+        </div>`
     }
 }
