@@ -30,7 +30,6 @@ nav button:hover {
 
 #app {
   width: 100%;
-  height: 100vh;
   padding-top: 13rem;
   display: flex;
   align-items: center;
