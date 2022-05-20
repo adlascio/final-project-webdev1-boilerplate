@@ -4,7 +4,9 @@ const loadCountries = () => {
     .catch(error => console.log('error',error));
 }
 
+
 loadCountries();
+
 
 export function getCountries() {
     const countries = localStorage.getItem('countries');
