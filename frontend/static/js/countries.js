@@ -11,4 +11,12 @@ export function getCountries() {
     return JSON.parse(countries);
 };
 
+export function saveCountry(country) {
+    localStorage.setItem('country', JSON.stringify(country));
+}
+
+export function loadCountry(){
+    const country = localStorage.getItem('country');
+    return JSON.parse(country);
+}
 

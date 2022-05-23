@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0 5%;
+    background-color: lightgray;
+    font-family: "Poppins", sans-serif;
+    font-size: .9rem;
+}
+
+h1 {
+    color : green;
+}
+
+.countries__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    width: 100%;
+
+    
+
+    &__card{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &__img-container{
+            max-height: 10rem;
+        }
+        
+        img{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        
+        &__info{
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        &__link{
+            text-decoration: none;
+            background-color: cornflowerblue;
+            color: white;
+            align-self: end;
+            justify-self: end;
+            padding: .5rem 1rem;
+            margin: .5rem;
+            border-radius: .5rem;
+        }
+    }
+}
+
+.countries__filterSection{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+
+    #searchInput, #selectRegion {
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        background-color: white;
+    }
+}
+
+.country{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+
+    img{
+        width: 90%;
+    }
+
+    &__info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+
+        h2, &__borders{
+            grid-column: 1/3;
+        }
+
+        &__borders{
+            display: flex;
+            gap:2rem;
+            margin: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            a{
+                text-decoration: none;
+                background-color: rebeccapurple;
+                color: white;
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+            }
+        }
+
+        &__field{
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+    }
+}
+
+#backBtn {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: rebeccapurple;
+    color: white;
+}

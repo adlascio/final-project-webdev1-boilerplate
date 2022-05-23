@@ -21,6 +21,7 @@ const navigateTo = url => {
 }
 
 const router = async () => {
+    console.log("hash",location.hash)
     const routes = [
         {path: '/', view: Homepage},
         {path: '/countries', view: Countries},
@@ -54,6 +55,7 @@ const router = async () => {
             const paramsId = params.id.toLowerCase(); 
             if(cca3 === paramsId){
                 found = true;
+                params["country"] = country;
              } 
         }
         !found && (match = {route: routes[0], result:[location.pathname]})
@@ -69,10 +71,10 @@ window.addEventListener('popstate', router);
 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", e => {
-        if(e.target.matches("[data-link]")){
-            e.preventDefault();
-            navigateTo(e.target.href);
-        }
+        // if(e.target.matches("[data-link]")){
+        //     e.preventDefault();
+        //     navigateTo(e.target.href);
+        // }
     })
     router();
 })
