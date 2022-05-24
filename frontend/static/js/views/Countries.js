@@ -113,7 +113,6 @@ const createFilterSection = function () {
 
 }
 
-
 window.onload = function () {
     document.getElementById("filterButton").addEventListener("click", filterFunction);
 }

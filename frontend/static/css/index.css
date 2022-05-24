@@ -125,6 +125,11 @@ body {
   list-style: none;
 }
 
+.flagView div {
+  margin: 0px;
+  width: 250px;
+}
+
 * {
   padding: 0px;
   margin: 0px;

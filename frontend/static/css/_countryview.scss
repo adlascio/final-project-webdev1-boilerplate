@@ -37,3 +37,8 @@
 .countries-btn{
     @extend %flex-format;
 }
+
+.flagView div{
+    margin: 0px;
+    width: 250px;
+}

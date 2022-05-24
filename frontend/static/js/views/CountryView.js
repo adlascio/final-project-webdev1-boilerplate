@@ -1,5 +1,7 @@
 import AbstractView from "./AbstractView.js";
 import { getCountriesResume } from '../countries.js';
+
+
 const countriesResumeArray = getCountriesResume();
 let idCountry='';
 export default class extends AbstractView {
@@ -41,7 +43,7 @@ const deployCountryInfo = function () {
 
     let flagDiv = document.createElement('div');
 
-    flagDiv.className = 'flag';
+    flagDiv.className = 'flagView';
 
     let img = document.createElement('img');
     img.src = countrySelected.flag;
